@@ -42,7 +42,7 @@ nav ul {
 
 main{
     margin-top: 100px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 200px);
     display: flex;
 }
 
@@ -140,6 +140,12 @@ main{
     font-family: 'Open sans';
     font-weight: 400;
     font-size: 180%;
+}
+
+form h2{
+    font-family: 'Open sans';
+    font-weight: 400;
+    font-size: 200%;
 }
 
 .card section{
@@ -261,6 +267,59 @@ article ol {
     border-radius: 5%;
 }
 
+.footer{
+    height: 100px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input{
+    font-size: 100%;
+    font-family: 'Open sans';
+}
+
+input,textarea{
+    font-size: 100%;
+    font-family: 'Open sans';
+    padding: 5px;
+}
+
+input[type="submit"]{
+    background:black;
+    color: white;
+    border: none;
+    width: 200px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+.footer p{
+    margin: 0;
+    padding: 0 50px;
+}
 @media screen and (max-width: 1000px) {
     body {
         font-size: 14px;
@@ -275,6 +334,10 @@ article ol {
     }
     nav{
         padding: 10px;
+    }
+
+    nav a{
+        display: none;
     }
 
     .cards{
@@ -304,6 +367,11 @@ article ol {
     .card{
         width: 300px;
         aspect-ratio: 1/1.3 ;
+    }
+
+    .footer p:nth-of-type(2){
+        display: none;
+        font-size: 14px;
     }
     
 }
